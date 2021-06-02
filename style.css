@@ -102,7 +102,7 @@ h1,h2,h3{
 .header{
     position:relative;
     height: 95vh;
-    background: linear-gradient(rgba(0.5,0.5,0.5,0.5), rgba(0.5,0.5,0.5,0.5)),url('../images/background.jpg');
+    background: linear-gradient(rgba(0.5,0.5,0.5,0.5), rgba(0.5,0.5,0.5,0.5)),url('background.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
