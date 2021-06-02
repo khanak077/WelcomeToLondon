@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/f9d81f241a.js" crossorigin="anonymous"></script>
+    <script src="submit.js"></script>
+    <title>Welcome to London</title>
+</head>
+<body>
+    <script>
+        function myfunction(){
+            alert("Your room has been booked");
+        }
+    </script>
+
+
+    <nav class='navbar bg-dark'>
+        <div class='container'>
+            <h1 class='logo lg-heading'>WT</h1>
+            <ul class='nav-items'>
+                <li class='nav-item'><a href="./index1.html">Home</a></li>
+                <li class='nav-item'><a href="./about.html">About</a></li>
+                <li class='nav-item'><a href="./contact.html">Contact</a></li>
+                
+            </ul>
+        </div>
+    </nav>
+
+    <section class='contact-from'>
+        <div class='container'>
+            <div class='form-wrapper'>
+                <div class='address'>
+                    <div class='address-group'>
+                        <i class='fas fa-map-marker-alt fa-3x text-red'></i>
+                        <h2 class='text-gray md-heading'>Location</h2>
+                        <p>103-109 Southwark Street, London SE1 0JQ United Kingdom</p>
+                    </div>
+                    <div class='address-group'>
+                        <i class='far fa-envelope fa-3x text-red'></i>
+                        <h2 class='text-gray md-heading'>Email</h2>
+                        <p>southwarkstreet@gmail.com</p>
+                    </div>
+                    <div class='address-group'>
+                        <i class='fas fa-phone-square-alt fa-3x text-red'></i>
+                        <h2 class='text-gray md-heading'>Call</h2>
+                        <p>1234567890</p>
+                    </div>
+                    <img src='./images/hotel.jpg' alt='Hotels'>
+                </div>
+                <form action='' class='form'>
+                    <h1 class='lg-heading text-black'>Contact Us</h1>
+                    <p class='text-gray'>Let us know your questions, suggestions and concerns by filling out the form.</p>
+                    <div class='form-group'>
+                        <label for='username'>Name</label>
+                        <input type='text' name='' id='username' autocomplete=off required>
+                    </div>
+                    <div class='form-group'>
+                        <label for='phone'>Phone</label>
+                        <input type='tel' name='' id='phone' autocomplete=off minlength="10" maxlength="10" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required>
+                    </div>
+                    <div class='form-group'>
+                        <label for='email'>Email</label>
+                        <input type='email' name='' id='email' autocomplete=off required>
+                    </div>
+                    <div class='form-group'>
+                        <label for='message'>Message</label>
+                        <textarea name='' id='message' autocomplete=off></textarea>
+                    </div>
+                    <button type='submit' class='form-btn' onclick='myfunction()'>Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class='footer'>
+        <div class='social-media-links'>
+            <i class='fab fa-facebook fa-4x footer'></i>
+            <i class='fab fa-twitter fa-4x footer'></i>
+            <i class='fab fa-instagram fa-4x footer'></i>
+        </div>
+        <p class='footer'>London &copy; 2021, All Rights Reserved</p>
+    </footer>
+</body>
+</html>
